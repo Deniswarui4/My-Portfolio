@@ -1,0 +1,71 @@
+/* -- Color Variables -- */
+:root{
+	--dhahabu: #fead09;
+	--nyeusi: #000;
+	--nyeupe: #fff;
+	--mkunjo: 0.5rem; /* -- border-radius -- */
+	--padding: .5rem; /* -- padding-all-round -- */
+}
+
+/* -- Reseting Browser Defaults -- */
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: linear-gradient(#1e415e 10%, #2b5b84 90%);
+	color: var(--nyeupe);
+	font-size: 0.875rem;
+	font-weight: 300;
+	line-height: 1.3;
+	overflow-x: hidden;
+	height: 100vh;
+}
+a, a:link, a:active, a:visited{
+	color: #ffd343;
+    font-weight: 700;
+    text-decoration: none;
+	transition: color 0.25s ease-out; 
+	-webkit-transition: color 0.25s ease-out; 
+	-moz-transition: color 0.25s ease-out; 
+	-o-transition: color 0.25s ease-out; 
+}
+img{width: 100%;}
+h1, h2{
+	font-weight: 300;
+	line-height: 1.2;
+	margin: 0.625rem 0;
+}
+p{padding: .5rem;}
+
+/* -- Utility Classes -- */
+.wrapper{
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 var(--padding);
+}
+
+/* -- Global Styles Starts Here -- */
+body{
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-auto-rows: minmax(60px, auto);
+	grid-gap: 1rem;
+	place-content: center;
+	align-items: center;
+	grid-template-areas:
+	"main main main main main main main main main main main main"
+	"footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+.author{color:#ffd343;}
+
+#home{}
+#about{}
+#work{}
+#contact{}
+
